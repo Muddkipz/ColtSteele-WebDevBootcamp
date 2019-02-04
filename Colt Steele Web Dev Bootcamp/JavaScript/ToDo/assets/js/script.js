@@ -13,7 +13,7 @@ $("ul").on("click", "span", (function(event){
 	event.stopPropagation();
 }));
 
-
+//listen for enter to be pressed in input, update li's
 $("input[type='text']").keypress(function(event){
 	if(event.which === 13){
 		//grabs new todo text from input
@@ -24,6 +24,7 @@ $("input[type='text']").keypress(function(event){
 	}
 });
 
+//add fadeout to input
 $(".fa-plus").click(function(){
 	$("input[type='text']").fadeToggle(500);
 });
